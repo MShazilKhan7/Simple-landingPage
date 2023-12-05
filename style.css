@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.main{
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#topsection{
+    width: 100vw;
+    min-height: 60vh;
+    position: relative;
+    background-image: url(https://images.unsplash.com/photo-1607427672021-a484a02c3f40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1882&q=80);
+    background-position: center;
+}
+
+#bottomsection{
+    width: 100vw;
+    min-height: 40vh;
+    background-color: orange;
+    display: flex;
+}
+#bottomsection #box1,#box2,#box3,#box4{
+    min-height: inherit;
+}
+#box1{
+    width: 20%;
+    background-color: white;
+    text-align: center;
+}
+#box2{
+    width: 30%;
+    background-image: url(https://images.unsplash.com/photo-1569240192190-e37f8b0010be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80);
+    background-position: center;
+    background-size: cover;
+
+}
+#box3{
+    width: 20%;
+    background-color:green;
+}
+#box4{
+    width: 30%;
+    background-color: rgb(33, 32, 32);
+    color: white;
+    font-weight: lighter;
+}
+#topsection #text h2{
+    font-size: 40px;
+}
+/* color ko cool karne ke liye kia hai */
+#overdiv{
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(194, 191, 191, 0.437);
+}
+#text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#text h2{
+    font-size: 15vw;
+    color: white;
+    font-weight: 600;
+}
+
+#text #icons{
+    /* color: grey; */
+    font-size: 20px;
+}
+#topsection #text{
+    width: 100%;
+    color: black;
+    font-weight: bolder;
+    outline: none;
+    position: absolute;
+    bottom: 25%;
+    padding: 5vh 10vw;
+}
+
+#righttextsec div{
+    width: 20px;
+    height: 20px;
+}
+#righttextsec{
+    color: white;
+    font-weight: lighter;
+    width: 50%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#box1 .textdiv{
+    display: inline-block;
+    width: fit-content;
+    text-align: left;
+}
+
+#box1 h3[id="current"]{
+    color: rgb(168, 163, 163);
+    margin-top: 46px;
+}
+
+#box1 h3{
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+#box3 #bthirdboxup{
+    text-align: center;
+    min-height: 20vh;
+    width: 100%;
+    background-color: orangered;
+}
+#box3 #bthirdboxdown{
+    min-height: 20vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1488718729626-53eaa41c0848?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.textdivthird{
+    display: inline-block;
+    font-size: 12px;
+    text-align: left;
+}
+.textdivthird h3{
+    color: white;
+    margin-top: 15px;
+    font-weight: lighter;
+
+}
+
+.textdivthird h3[id="art"]{
+    margin-top: 35px;
+}
+
+
+.profile{
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+
+}
+
+.profile_text{
+    margin-left: 20px;
+}
+#innerbox4{
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    text-align: left;
+    position: relative;
+}
+#innerbox4 h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    position: absolute;
+    top: 20px;
+
+}
+#image1{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(second.png);
+    background-position: bottom;
+    background-size: cover;
+    background-color: white;
+}
+
+#image2{
+    background-color:white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(newicon.png);
+    background-position: bottom;
+    background-size: cover;
+}
+#box4{
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    #overdiv #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #text h2{
+        font-size: vw;
+    }
+    #righttextsec{
+        /* initial se default hojati hai */
+        flex-direction: column;
+        align-items: flex-start;
+        width: initial; 
+        padding: 2px;
+
+    }
+    #righttextsec p{
+        margin-top: 20px;
+    }
+    #icons{
+        margin-top: 20px;
+    }
+    .textdivthird h3[id="art"]{
+        margin-top: 20px;
+    }
+   
+    #bottomsection{
+        flex-direction: column;
+    }
+    #bottomsection #box3{
+        flex-direction: column;
+    }
+    #box1, #box2, #box3, #box4{
+        width: 100%;
+    }
+   
+} 
+
